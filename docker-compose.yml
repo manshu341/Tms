@@ -1,0 +1,32 @@
+version: '3.9'
+
+services: 
+  database: 
+    container_name: Mongo-Admin
+    image: mongo 
+    command: mongod 
+    ports: 
+      - 27017:27017 
+    restart: always 
+    volumes: 
+      - mongo-data:/data/db 
+
+ 
+  team3-app: 
+    build: 
+      context: . 
+    image: eureka-service
+    container_name: eureka 
+    restart: always
+    ports: 
+      - 8761:8761 
+    depends_on: 
+      - database
+
+networks: 
+    default: 
+      external: 
+        name: team3-network
+volumes: 
+    mongo-data: 
+      driver: local
