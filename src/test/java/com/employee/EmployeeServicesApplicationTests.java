@@ -1,4 +1,4 @@
-package com.team3.employee;
+package com.employee;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
@@ -16,9 +16,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
 
-import com.team3.employee.beans.Employee;
-import com.team3.employee.repo.EmployeeReposatory;
-import com.team3.employee.services.EmployeeServices;
+import com.employee.beans.Employee;
+import com.employee.repo.EmployeeReposatory;
+import com.employee.services.EmployeeServices;
 
 @SpringBootTest
 class EmployeeServicesApplicationTests {

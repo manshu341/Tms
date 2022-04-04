@@ -1,4 +1,4 @@
-package com.team3.employee.exception;
+package com.employee.exception;
 
 import java.util.Date;
 

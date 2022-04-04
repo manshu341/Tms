@@ -76,7 +76,7 @@ pipeline {
             steps {
                 echo "-=- run Docker image -=-"
                 echo "Executing  ${VERSION}"
-                bat "docker run --name=employee-server --detach --restart=always --network team3-network -p 8200:8200 ${ORG_NAME}/${APP_NAME}:latest"
+                bat "docker run --name=employee-server --detach --restart=always --network network -p 8200:8200 ${ORG_NAME}/${APP_NAME}:latest"
             }
         }
 

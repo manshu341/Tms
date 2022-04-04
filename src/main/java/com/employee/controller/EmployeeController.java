@@ -1,4 +1,4 @@
-package com.team3.employee.controller;
+package com.employee.controller;
 
 /**
  * @author Satyaa
@@ -17,9 +17,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.team3.employee.beans.Employee;
-import com.team3.employee.exception.EmployeeNotFoundException;
-import com.team3.employee.services.EmployeeServices;
+import com.employee.beans.Employee;
+import com.employee.exception.EmployeeNotFoundException;
+import com.employee.services.EmployeeServices;
 
 @RestController
 public class EmployeeController {
