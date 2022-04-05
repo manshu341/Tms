@@ -76,7 +76,7 @@ pipeline {
             steps {
                 echo "-=- run Docker image -=-"
                 echo "Executing  ${VERSION}"
-                bat "docker run --name=${TEST_CONTAINER_NAME} --detach --restart=always --network network -p 8765:8765 ${ORG_NAME}/${APP_NAME}:latest"
+                bat "docker run --name=api-gateway --detach --restart=always --network network -p 8765:8765 ${ORG_NAME}/${APP_NAME}:latest"
             }
         }
 
