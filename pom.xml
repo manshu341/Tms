@@ -15,19 +15,19 @@
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>2021.0.1</spring-cloud.version>
-		
+
 		<sonar.java.binaries>target/classes</sonar.java.binaries>
-		<sonar.login>c195b48b6f208081843630a1bb4021e9239329b6</sonar.login>
+		<sonar.login>788ac08c774b2fc67dcceedce2ce3c99875004f8</sonar.login>
 		<sonar.host.url>http://localhost:9000</sonar.host.url>
-		
-		<sonar.projectKey>employee-service</sonar.projectKey>
+
+		<sonar.projectKey>Employee</sonar.projectKey>
 		<sonar.exclusions>
-		src/main/java/com/team3/employee/*.java,
-		src/main/java/com/team3/employee/exception/*.java,
-		src/main/java/com/team3/employee/controller/*.java,
-		src/main/java/com/team3/employee/beans/*.java,
-		src/main/java/com/team3/employee/config/*.java,
-		src/main/java/com/team3/employee/repo/*.java,
+		src/main/java/com/employee/*.java,
+		src/main/java/com/employee/exception/*.java,
+		src/main/java/com/employee/controller/*.java,
+		src/main/java/com/employee/beans/*.java,
+		src/main/java/com/employee/config/*.java,
+		src/main/java/com/employee/repo/*.java,
 
 		</sonar.exclusions>
 		<sonar.tests>src/test</sonar.tests>
@@ -39,13 +39,13 @@
 		<sonar.sources>src/main</sonar.sources>
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>target/jacoco.exec</sonar.jacoco.reportPath>
-		
-		
+
+
 	</properties>
 	<dependencies>
 
-	
-<dependency>
+
+		<dependency>
 			<groupId>de.codecentric</groupId>
 			<artifactId>chaos-monkey-spring-boot</artifactId>
 			<version>2.0.0</version>
